@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "isinglab"
+version = "0.1.0"
+description = "A scientifically transparent 2D Ising model Monte Carlo simulator"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.7",
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
